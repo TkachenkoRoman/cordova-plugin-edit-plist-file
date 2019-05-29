@@ -25,27 +25,14 @@
         <engine name="cordova" version=">=3.5.0" />
     </engines>
     
-    
-    
     <!-- ios -->
     <platform name="ios">
-        
-        <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
-            <array>
-                <string>twitter</string>
-                <string>fb</string>
-                <string>whatsapp</string>
-                <string>itms-apps</string>
-                <string>youtube</string>
-                <string>soundcloud</string>
-                <string>fb-messenger</string>
-                <string>instagram</string>
-            </array>
-        </config-file>
-        
-        
-        
-    </platform>
+	  <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+		  <dict>
+			  <key>NSAllowsArbitraryLoads</key>
+			  <true/>
+		  </dict>
+	  </config-file>
+	</platform>
     
 </plugin>
