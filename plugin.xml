@@ -27,8 +27,11 @@
     
     <!-- ios -->
     <platform name="ios">
-	  <config-file target="*-Info.plist" parent="NSUserNotificationsUsageDescription">
-		  <string>test</string>
+	  <config-file target="*-Info.plist" parent="/*">
+		  <dict>
+			  <key>NSUserNotificationsUsageDescription</key>
+			  <string>Your description goes here.</string>
+		  </dict>
 	  </config-file>
 	</platform>
     
