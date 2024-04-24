@@ -27,11 +27,8 @@
     
     <!-- ios -->
     <platform name="ios">
-	  <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
-		  <dict>
-			  <key>NSAllowsArbitraryLoads</key>
-			  <true/>
-		  </dict>
+	  <config-file target="*-Info.plist" parent="NSUserNotificationsUsageDescription">
+		  <string>test</string>
 	  </config-file>
 	</platform>
     
